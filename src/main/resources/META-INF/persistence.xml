@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="ITMD515PU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/itmd566DS</jta-data-source>
+    <class>com.carservices.jpa.Invoice</class>
+    <class>com.carservices.jpa.Customer</class>
+    <class>com.carservices.jpa.Order</class>
+    <class>com.carservices.jpa.Vehicles</class>
+    <class>com.carservices.jpa.Transaction</class>
+    <class>com.carservices.jpa.Ticket</class>
+    <class>com.carservices.jpa.Drivers</class>
+    <class>com.carservices.jpa.Expense</class>
+    <class>com.carservices.jpa.Truck</class>
+    <class>com.carservices.jpa.Comments</class>
+    <class>com.carservices.jpa.Employee</class>
+    <class>com.carservices.jpa.Location</class>
+    <class>com.carservices.jpa.Maintenance</class>
+    <class>com.carservices.jpa.Payment</class>
+    <class>com.carservices.jpa.Pricing</class>
+    <class>com.carservices.jpa.User</class>
+     <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <!--      <property name="eclipselink.logging.level" value="FINE"/>-->
+      <property name="eclipselink.logging.parameters" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
